@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="open_form_btn" onclick="open_form_btn1()">open</button>
+	<div class="popup_form" id="my_form" >
+		<form action="" class="form_container">
+		<h1>Login</h1>
+		<label for="">Email</label>
+		<input type="text" placeholder="Your Email" required autocomplete="off">
+		<label for="">Password</label>
+		<input type="password" placeholder="Your Password" required autocomplete="off">
+		<button type="submit" class="login_btn">Login</button>
+		<button class="cancel_btn" onclick="close_btn()">close</button>
+		
+	</div></form>
+
+    <script>
+        function open_form_btn1(){
+            document.getElementById('my_form').style.display="block"
+        }
+        function close_btn(){
+            document.getElementById('my_form').style.display="none"
+        }
+    </script>
+</body>
+</html>
